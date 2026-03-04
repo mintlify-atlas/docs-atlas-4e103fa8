@@ -1,0 +1,79 @@
+{
+  "projectType": "saas",
+  "projectName": "Bitcoin Node Dashboard",
+  "projectDescription": "A web dashboard for monitoring and managing Bitcoin nodes with real-time metrics and peer information.",
+  "theme": "aspen",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/docker-compose",
+              "deployment/environment-variables"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/dashboard",
+              "features/node-monitoring",
+              "features/peer-management",
+              "features/network-info"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/authentication",
+              "configuration/bitcoin-rpc",
+              "configuration/data-persistence"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/home",
+              "api/peers"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time Bitcoin node monitoring",
+    "Peer connection tracking and management",
+    "Network statistics and blockchain info",
+    "Authentication and secure access",
+    "Docker deployment with persistent storage",
+    "Multiple network support (IPv4, IPv6, Tor, I2P, CJDNS)"
+  ],
+  "publicApiSurface": [
+    "GET /api/bitcoin/home - Dashboard overview data",
+    "GET /api/bitcoin/peers - Peer information and statistics",
+    "POST /api/auth/login - User authentication",
+    "GET /api/auth/verify - Token verification",
+    "GET /api/ping - Health check endpoint"
+  ]
+}
